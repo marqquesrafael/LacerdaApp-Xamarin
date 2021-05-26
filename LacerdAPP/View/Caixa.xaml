@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="LacerdApp.Caixa"
+             Title="        Controle de Caixa"
+             NavigationPage.HasNavigationBar="True">
+    <ContentPage.Content>
+
+        <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+            
+            <StackLayout Orientation="Horizontal">
+                <Frame WidthRequest="130" HeightRequest="50" HasShadow="True" BackgroundColor="DarkSalmon" CornerRadius="10" HorizontalOptions="Center" BorderColor="LightGray">
+                    <Label Text=""
+                           x:Name="lblInvestimento"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Frame>
+                <Frame WidthRequest="130" HeightRequest="50" HasShadow="True" BackgroundColor="ForestGreen" CornerRadius="10" HorizontalOptions="Center" BorderColor="LightGray">
+                    <Label Text=""
+                           x:Name="lblLucro"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+
+            <forms:ChartView x:Name="graficoPizza" HeightRequest="200" WidthRequest="330" />
+            
+            <Button Text=" 💸 DEBITAR   "
+                    x:Name="btnDebitar"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Clicked="btnDebitar_Clicked"
+             />
+            
+        </FlexLayout>
+
+    </ContentPage.Content>
+</ContentPage>

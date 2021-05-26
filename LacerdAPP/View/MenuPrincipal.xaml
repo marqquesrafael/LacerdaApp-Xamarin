@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LacerdApp.MenuPrincipal"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""/>
+            <!--so para espaçamento-->
+
+
+            <Frame BorderColor="Gray"
+             CornerRadius="5"
+             Padding="8">
+
+                <StackLayout>
+                    <Label Text="📱 LacerdAPP"
+                        HorizontalTextAlignment="Center"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                     />
+
+                </StackLayout>
+            </Frame>
+
+            <Label Text=""/>
+            <!--so para espaçamento-->
+            <Label Text=""/>
+            <!--so para espaçamento-->
+
+            <Frame Margin="10"
+                BorderColor="Gray"
+                HasShadow="True"                  
+                CornerRadius="50"
+                HeightRequest="60"
+                WidthRequest="60"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                
+                   >
+                
+                <ImageButton Source="addProduto"
+                     Aspect="AspectFill"
+                     Margin="-20"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     Clicked="btAddProduto"
+                     BackgroundColor="Transparent"        
+                 />
+
+            </Frame>
+
+            <Frame Margin="10"
+                BorderColor="Gray"
+                HasShadow="True"                  
+                CornerRadius="50"
+                HeightRequest="60"
+                WidthRequest="60"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <ImageButton Source="Vendas"
+                    Aspect="AspectFill"
+                     Margin="-20"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     Clicked="btVendas"
+                     BackgroundColor="Transparent" 
+                 />
+
+            </Frame>
+
+            <Frame Margin="10"
+                BorderColor="Gray"
+                HasShadow="True"                  
+                CornerRadius="50"
+                HeightRequest="60"
+                WidthRequest="60"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <ImageButton Source="Caixa"
+                    Aspect="AspectFill"
+                     Margin="-20"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     Clicked="btCaixa"
+                     BackgroundColor="Transparent" 
+                 />
+
+            </Frame>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

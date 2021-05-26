@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    <pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="LacerdAPP.View.TipoDebitoPopup"
+        Visual="Material"
+        xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+        <StackLayout Margin="12"
+                Padding="24"
+                BackgroundColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center">
+        <Frame CornerRadius="20" BackgroundColor="WhiteSmoke" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+            <StackLayout>
+            <Entry 
+                x:Name="entryValorDebito"
+                Placeholder="💲 Valor desejado"
+                Keyboard="Numeric"
+                TextChanged="entryValorDebito_TextChanged"
+             />
+            <Entry 
+                x:Name="entryDescricao"
+                Placeholder="Descrição do débito"
+             />
+                <Label Text=""/>
+                <Button x:Name="btndebitar"
+                Text="💸 Efetuar Débito"
+                        TextColor="White"
+                CornerRadius="10"
+                BackgroundColor= "{DynamicResource PrimaryTextColor}"
+                Clicked="btndebitar_Clicked"
+             />
+            </StackLayout>
+        </Frame>
+       
+    </StackLayout>
+
+    </pages:PopupPage>
+
+
+
+
+
+

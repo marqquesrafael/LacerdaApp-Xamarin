@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LacerdApp.Produtos"
+             Visual="Material"          
+             >
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,5">
+
+                <Frame BorderColor="Gray"
+             CornerRadius="5"
+             Padding="8">
+
+                    <StackLayout>
+                    <Label Text="🛒 Cadastrar Nova Peça"
+                        HorizontalTextAlignment="Center"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                     />
+
+                    </StackLayout>
+                </Frame>
+            
+            <Label Text=""/>
+            <!--so para espaçamento-->
+            <Label Text=""/>
+            <!--so para espaçamento-->
+
+            <Entry 
+                x:Name="entryFornecedor"
+                Placeholder="🏢 Fornecedor"
+                Keyboard="Text"                
+             />
+
+            <Entry 
+                x:Name="entryDescricao"
+                Placeholder="👗 Descrição da peça"
+                Keyboard="Text"
+             />
+            
+            <Picker Title="🏷 Tamanho"                   
+                    x:Name="pickerTamanho"                  
+             />
+
+            <Entry 
+                x:Name="entryCor"
+                Placeholder="🎨 Cor"
+                Keyboard="Text"
+             />
+
+            <Entry 
+                x:Name="entryPrecoCusto"
+                Placeholder="💲 Preço de custo"
+                Keyboard="Numeric"
+                TextChanged="entryPrecoCusto_TextChanged"
+             />
+            
+            <Label Text=""/>
+            <!--so para espaçamento-->
+
+            <Button Text="💾  CADASTRAR" 
+                    TextColor="White"
+                    Clicked="btCadastro"
+                    BackgroundColor="{DynamicResource PrimaryTextColor}"
+             />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
